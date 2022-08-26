@@ -1,0 +1,73 @@
+{
+  "name": "RBAC access control",
+  "description": "",
+  "version": "5.0.2",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "darioalejandrovv@gmail.com",
+  "copyright.owner": "darioalejandrovv@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": ""
+  },
+  "engines": {
+    "node": "14 || 16 || 17 || 18"
+  },
+  "scripts": {
+    "build": "lb-tsc",
+    "build:watch": "lb-tsc --watch",
+    "clean": "lb-clean *backend-prueba*.tgz dist *.tsbuildinfo package",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "lb-prettier \"**/*.ts\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "lb-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run rebuild",
+    "test": "lb-mocha \"dist/__tests__/**/*.js\"",
+    "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js",
+    "verify": "npm pack && tar xf backend-prueba*.tgz && tree package && npm run clean",
+    "premigrate": "npm run build ",
+    "migrate": "node ./dist/migrate",
+    "preopenapi-spec": "npm run build",
+    "openapi-spec": "node ./dist/openapi-spec",
+    "rebuild": "npm run clean && npm run build",
+    "prestart": "npm run rebuild",
+    "start": "node ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@loopback/authentication": "^9.0.2",
+    "@loopback/authorization": "^0.12.2",
+    "@loopback/boot": "^5.0.2",
+    "@loopback/core": "^4.0.2",
+    "@loopback/repository": "^5.0.2",
+    "@loopback/rest": "^12.0.2",
+    "@loopback/rest-explorer": "^5.0.2",
+    "@loopback/security": "^0.8.2",
+    "@loopback/service-proxy": "^5.0.2",
+    "@types/bcryptjs": "2.4.2",
+    "bcryptjs": "^2.4.3",
+    "casbin": "^5.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "loopback-connector-mysql": "^5.4.4",
+    "loopback-connector-rest": "^4.0.1"
+  },
+  "devDependencies": {
+    "@loopback/build": "^9.0.2",
+    "@loopback/eslint-config": "^13.0.2",
+    "@loopback/http-caching-proxy": "^4.0.2",
+    "@loopback/testlab": "^5.0.2",
+    "@types/lodash": "^4.14.184",
+    "@types/node": "^14.18.25",
+    "eslint": "^8.22.0",
+    "lodash": "^4.17.21",
+    "typescript": "~4.7.4"
+  }
+}

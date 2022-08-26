@@ -1,0 +1,4 @@
+p, admin, member*, post
+p, admin, member*, patch
+p, admin, member*, delete
+g, u1, admin

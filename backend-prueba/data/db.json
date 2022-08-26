@@ -1,0 +1,27 @@
+{
+  "ids": {
+    "User": 4,
+    "Member": 6585
+  },
+  "models": {
+    "User": {
+      "1": "{\"id\":1,\"username\":\"sarah\",\"email\":\"sarah@connor.com\"}"
+    },
+    "UserCredentials": {
+      "1": "{\"password\":\"$2a$10$6Ham3IkY6wBZNs8RE1yODO15NNmFRHO3lxw7D13Lr8XXii3Wt1Km.\",\"userId\":1,\"id\":1}"
+    },
+    "Member": {
+      "342-12-1234": "{\"firstName\":\"Arnold\",\"ssn\":\"342-12-1234\",\"lastName\":\"Castro\",\"address\":\"cll. 321\"}",
+      "433-45-5968": "{\"firstName\":\"James\",\"ssn\":\"433-45-5968\",\"lastName\":\"Camedia\",\"address\":\"Av. 7 #24-12\"}",
+      "983-95-1776": "{\"firstName\":\"Mule\",\"ssn\":\"983-95-1776\",\"lastName\":\"Mosqu era\",\"address\":\"Dg. 4#24-44\"}",
+      "342-12-1235": "{\"firstName\":\"Arnold\",\"ssn\":\"342-12-1235\",\"lastName\":\"Castro\",\"address\":\"cll. 321\"}",
+      "433-45-5969": "{\"firstName\":\"James\",\"ssn\":\"433-45-5969\",\"lastName\":\"Camedia\",\"address\":\"Av. 7 #24-12\"}",
+      "983-95-1777": "{\"firstName\":\"Mule\",\"ssn\":\"983-95-1777\",\"lastName\":\"Mosqu era\",\"address\":\"Dg. 4#24-44\"}",
+      "342-12-1236": "{\"firstName\":\"Arnold\",\"ssn\":\"342-12-1236\",\"lastName\":\"Castro\",\"address\":\"cll. 321\"}",
+      "433-45-5970": "{\"firstName\":\"James\",\"ssn\":\"433-45-5970\",\"lastName\":\"Camedia\",\"address\":\"Av. 7 #24-12\"}",
+      "983-95-1778": "{\"firstName\":\"Mule\",\"ssn\":\"983-95-1778\",\"lastName\":\"Mosqu era\",\"address\":\"Dg. 4#24-44\"}",
+      "323-32-4444": "{\"firstName\":\"Alexandro\",\"ssn\":\"323-32-4444\",\"lastName\":\"Magno\",\"address\":\"Cll 7 7 7\"}",
+      "234-23-2333": "{\"firstName\":\"Alejandro\",\"ssn\":\"234-23-2333\",\"lastName\":\"Magno\",\"address\":\"Cl3333\"}"
+    }
+  }
+}
